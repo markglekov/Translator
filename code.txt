@@ -1,0 +1,30 @@
+function main() {
+    let X, Y, Z;
+    X = 3;
+    Y = 4;
+    Z = 5;
+    hypoCheck(X, Y, Z);
+    X = 10;
+    Y = 19;
+    calcHypo(X, Y);
+}
+
+function hypoCheck(X, Y, Z) {
+    pythagoreanTriple = X ** 2 + Y ** 2;
+    if (pythagoreanTriple == Z ** 2){
+        console.log(true)
+        console.log("This is a Pythagorean triple: ", X, Y, Z);
+    } else {
+            console.log(false);
+            console.log("This is not a Pythagorean triple: ", X, Y, Z);
+        }
+
+}
+
+function calcHypo(X, Y) {
+    hypo = (X ** 2 + Y ** 2) ** 0.5;
+    console.log('Hypotenuse of a right triangle with sides', X, 'and', Y, 'is', hypo);
+}
+
+console.log("Hello World!!!")
+main();
